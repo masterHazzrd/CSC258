@@ -7,16 +7,19 @@ public class GallagherDriver {
     public static void main(String[] args) {
 
         ArrayList<Arena> arenas = new ArrayList<>();
-        File text - new File()
+
+        File file = new File("C:\\Users\\John\\Documents\\GitHub\\GitRepositories\\CSC258\\Project\\Review\\IndoorArenas.txt");
+
         try {
-            Scanner scanner = new Scanner(new File("IndoorArenas.txt"));
-            while (scanner.hasNextLine()) {
-                
+            Scanner scnr = new Scanner(file);
+
+            while (scnr.hasNextLine()) {
+                System.out.println(scnr.nextLine());
             }
-            scanner.close();
         } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
-        }
+        }             
 
     }    
 }
