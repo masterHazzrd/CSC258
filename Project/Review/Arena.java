@@ -68,5 +68,10 @@ public class Arena {
     public Tenant getTenant() {
         return team;
     }
+
+    @Override
+    public String toString() {
+        return "Arena: " + venueName + "\nCity: " + city + "\nState: " + state + "\nCapcity" + maxCapcity + "\nOpened: " + yearOpened + "\nTenant: " + team;
+    }
     
 }
