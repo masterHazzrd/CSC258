@@ -2,36 +2,46 @@ package Project.Review;
 
 public class Tenant {
 
-    private String tenantName;
+    private String teamName;
     private String sport;
+    private String league;
 
     public Tenant() {
     }
 
-    public Tenant(String name, String sport) {
-        this.tenantName = name;
+    public Tenant(String name, String sport, String league) {
+        this.teamName = name;
         this.sport = sport;
+        this.league = league;
     }
 
-    public String getTenantName() {
-        return tenantName;
+    public void setTeamName(String name) {
+        this.teamName = name;
     }
 
-    public void setTenantName(String name) {
-        this.tenantName = name;
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setSport(String sport) {
+        this.sport  = sport;
     }
 
     public String getSport() {
         return sport;
     }
 
-    public void setSport(String sport) {
-        this.sport = sport;
+    public void setLeague(String league) {
+        this.league = league;
+    }
+
+    public String getLeague() {
+        return league;
     }
 
     @Override
     public String toString() {
-        String rtnStr = "Tenant: " + tenantName + "\nSprort: " + sport;
-        return rtnStr;
-    }    
+        return "Tenant: " + teamName + "\nSport: " + sport + "\nLeague: " + league;
+    }
+       
 }
